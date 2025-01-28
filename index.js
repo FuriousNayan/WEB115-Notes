@@ -37,6 +37,54 @@ console.log(myAge, typeof myAge)
 let t = "pizza";
 x = Number(t);
 console.log(typeof t)
+
+
+// Debugging in JavaScript //
+
+
+// 4 Types of Errors //
+
+// 1. Load-time Errors (a.k.a. Syntax Errors)
+    // Occurs when program is loaded by browser
+    // Grammar, Spelling Mistakes, Missing parentheses, Incomplete Brackets
+
+// 2. Logic Errors
+    // When code runs unexpectedly
+
+// 3. User Errors
+    // When user does something unexpected to the dev
+
+// 4. Run-time Errors
+    // Occur when interpreter is unable to run the code
+    // Syntax is correct, but execution is broken
+    // ex. Reference an undeclared variable. Illegal math operations.
+
+// Debugging Methods & Tools //
+// 1. Tracing: The examination of individual statements in an executing program. 
+//    Displaying alert boxes at diff. points to show results intermittently. 
+
+// 2. Logging
+//      console.log to find the error
+
+// 3. Commenting out code
+//      Commenting code to find the error
+
+// 4. Break mode and Break Points
+//      Break Mode: Mode for running a program in which execution is suspended
+//      to allow you to review the current state of variables and functions
+
+// 5. Scope Window
+// 6. Watch Window
+// 7. Call Stack
+
+//try __ finally blocks
+
+try{
+    console.log(x)
+}
+catch(error){
+    console.error(error)
+}
 /*
 
 /*
