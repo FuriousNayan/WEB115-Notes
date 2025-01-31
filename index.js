@@ -203,6 +203,7 @@ catch(error){
 // happyBirthday("Abid", 16);
 // happyBirthday("Mr. Gardner", 38);
 
+/*
 function add(x, y){
     let result = x + y;
     return result
@@ -237,3 +238,71 @@ function isValidEmail(email){
 
 let emailAnswer = isValidEmail("nmpatel133@gmail.com")
 console.log(emailAnswer)
+
+*/
+
+// Loops
+
+// While Loop //
+// Repeat some code WHILE condition is true
+
+/*
+let username = "";
+
+if (username === ""){
+    console.log("You didn't enter your name")
+}
+else{
+    console.log(`Hello ${username}`)
+}
+
+let myUsername = "";
+
+while (myUsername === ""){
+    console.log(`Name not found.`)
+    myUsername = window.prompt(`Enter your name`)
+}console.log("While loop finished")
+console.log(`Hello, ${myUsername}`)
+
+// Another way via do while. Run code first, then check condition.
+
+let myName;
+
+do{
+    myName = window.prompt(`Enter your name: `)
+}while(myName === "" || myName === null);
+
+
+let loggedIn = false;
+let myNewUserName;
+let myPassword;
+
+while(!loggedIn){
+    myNewUserName = window.prompt("Enter your username")
+    myPassword = window.prompt("Enter your password")
+
+    if(myNewUserName === "username" && myPassword === "password"){
+        loggedIn = true
+        console.log("Log in success!")
+    }
+
+    else{
+        console.log("Invalid Credentials. Try Again.")
+    }
+}
+*/
+
+// For Loops //
+// Repeat some code a limited amount of time
+
+for (let i = 2; i <= 10; i+=2){
+    console.log("Hello");
+    console.log(i)
+}
+
+for(let i = 1; i <= 20; i++){
+    if(i == 13){
+        continue;
+    }
+    console.log(i)
+}
