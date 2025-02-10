@@ -295,6 +295,7 @@ while(!loggedIn){
 // For Loops //
 // Repeat some code a limited amount of time
 
+/*
 for (let i = 2; i <= 10; i+=2){
     console.log("Hello");
     console.log(i)
@@ -305,4 +306,91 @@ for(let i = 1; i <= 20; i++){
         continue;
     }
     console.log(i)
+}
+*/
+
+// Arrays //
+let fruits = ["apple", "banana", "orange", "grape"]
+console.log(fruits[0])
+fruits[3] = "coconut"
+console.log(fruits[3])
+
+fruits.push("cocunut") // Adds to the end of the array
+fruits.pop(); // Removes the last element of the array
+fruits.unshift("mango") // Adds to the beginning of the array
+fruits.shift() // Removes the first element of the array
+
+let numOfFruits = fruits.length;
+console.log(numOfFruits);
+console.log(fruits.length)
+
+let index = fruits.indexOf("starfruit") // Search for index of matching
+console.log(index); // Returns -1 if not found
+
+
+// Loop through an array
+
+for(let i = 0; i < fruits.length; i++){
+    console.log(fruits[i])
+}
+
+// Iterate through array backwards
+for(let i = fruits.length - 1; i >= 0; i--){
+    console.log(fruits[i])
+}
+
+// Enhanced for loop
+for(let fruit of fruits){
+    console.log(fruit)
+}
+
+// Sort methods
+fruits.sort();
+console.log(fruits)
+
+// Reverse method
+fruits.reverse();
+console.log(fruits)
+
+// 2D Arrays - A multidimensional array that stores a matrix of data in rows and columns
+const matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+console.log(matrix[2][0])
+
+for (let row of matrix){
+    //console.log(row)
+    const rowString = row.join(' ');
+    console.log(rowString)
+}
+
+// Objects = Like a dictionary in Python
+// NOT the same as "objects" from the term "Object Oriented Programming"
+
+let person = {
+    firstName: "John",
+    lastName: "Smith",
+    age: 46,
+    email: "Johnsmith@gmail.com"
+}
+
+// Dot Notation
+console.log(person.firstName) // Accessing the object firstName
+console.log(person["lastName"]) // Another way to access the object lastName
+
+// Bracket Notation
+console.log(person["age"])
+console.log(person["email"])
+console.log(person["age"] + 10)
+
+for (i in person){
+    console.log(i)
+    console.log(person[i])
+}
+
+for (i in person){
+    console.log(i + ": " + person[i])
 }
