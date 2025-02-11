@@ -309,6 +309,7 @@ for(let i = 1; i <= 20; i++){
 }
 */
 
+/*
 // Arrays //
 let fruits = ["apple", "banana", "orange", "grape"]
 console.log(fruits[0])
@@ -394,3 +395,66 @@ for (i in person){
 for (i in person){
     console.log(i + ": " + person[i])
 }
+*/
+
+
+// MATH Object = a built-in object that provides
+                // a collection of properties & methods
+
+let x = 1.99;
+let y = 4;
+let z = 8.2;
+
+console.log(Math.PI);
+console.log("The minimum is: " + Math.min(x,y,z));
+console.log("The maximum is: " + Math.max(x,y,z));
+
+console.log("The Square root is:" + Math.sqrt(y)) 
+console.log("The rounded is:" + Math.round(z)) 
+console.log("The rounded down is:" + Math.floor(z)) 
+console.log("The rounded up is:" + Math.ceil(z)) 
+
+console.log("Removes Decimal: " + Math.trunc(z)) // Removes decimal
+console.log("x to the power of y is: "+ (Math.pow(x,y)))
+console.log("Returns what sign it is (negative = -1, null = 0, positive = 1: " + (Math.sign(5)))
+
+console.log(Math.random())
+console.log(Math.random()* 10) // Returns between 0-9
+console.log(Math.random()* 11) // Returns between 0-10
+console.log(Math.random()* 101) // Returns between 0-100
+
+let min = 1;
+let max = 1000;
+
+function getRndIntgerExclusive(min, max){
+    return Math.floor(Math.random() * (max - min) ) - min;
+}
+
+console.log(getRndIntgerExclusive(min, max))
+
+
+function getRndIntgerExclusive(min, max){
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+console.log(getRndIntgerExclusive(min, max))
+
+// Spread Operator = Allow an iterable such as an array or string to be expanded into seperate element
+
+let nums = [1,2,3,4,5];
+
+let maximum = Math.max(nums)
+let newMaximum = Math.max(...nums) // The ... is a spread operator
+
+console.log (maximum, newMaximum)
+
+// Combining arrays with spread operator
+let fruitsAgain = ["apple", "orange", "banana"];
+
+let vegetables = ["carrot", "potato", "broccoli"];
+
+//combines fruitsAgain + vegetables
+let foods = [...fruitsAgain, ...vegetables];
+console.log(foods)
+foods = [...fruitsAgain, "kiwi", ...vegetables, "spinach"];
+console.log(foods)
